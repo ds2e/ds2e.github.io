@@ -167,11 +167,10 @@ h1 {
     background-size: cover;
 }
 
-
 #Story iframe{
     min-width: 0 !important;
-    max-width: 100% !important;
-    min-height: 500px;
+    width: 100% !important;
+    min-height: fit-content;
 }
 /* Story Section */
 
