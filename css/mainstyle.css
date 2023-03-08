@@ -1,0 +1,149 @@
+body{
+    color: rgb(150,96,66);
+}
+
+h1{
+    font-size: 5em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navmain .container-fluid #navbarSupportedContent ul li a.active {
+    background-color: rgb(150,96,66);
+    border-radius: 30%;
+}
+
+.nav-item{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.nav-item path, .navmain path{
+    /* fill: rgb(225,207,197); */
+    fill: rgb(150,96,66);
+}
+
+.bg-nav-link{
+    background-color: rgb(244, 235, 230);
+}
+
+.navmain{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    /* height: 20vh; */
+}
+
+section{
+    position: relative;
+}
+
+/* Greeting Section */
+#Greeting .col-4{
+    background-color: rgb(150,96,66);
+    height: 100vh;
+}
+
+#Greeting .col-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 235, 230);
+    height: 100vh;
+}
+
+.greeting-img{
+    position: absolute;
+    width: 24%;
+    height:70%;
+    left: 21%;
+    top: 15%;
+    margin: auto;
+}
+
+#Greeting img{
+    border-top-left-radius: 50% 30%;
+    border-top-right-radius: 50% 30%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.greeting-quote{
+    width: 40%;
+    height: fit-content;
+}
+/* Greeting Section */
+/* Bio Section */
+#Bio .col-4{
+    /* background-color: rgb(150,96,66); */
+    height: 100vh;
+}
+
+#Bio .col-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.bio-img{
+    position: absolute;
+    width: 20%;
+    height:60%;
+    left: 5%;
+    top: 20%;
+    margin: auto;
+}
+
+#Bio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio-text{
+    position: absolute;
+    left: 30%;
+    width: 30%;
+    height: fit-content;
+}
+/* Bio Section */
+/* Info Section */
+#Info{
+    height: 100vh;
+    background-color: rgb(244, 235, 230);
+}
+#Info h1 ,#Info h3{
+    text-align: center;
+}
+
+#Info h1{
+    padding-top: 5%;
+}
+
+div[class*="info-img"]{
+    height: 70%;
+    width: 70%;
+}
+
+div[class*="info-text"]{
+    position: absolute;
+    top : 80%;
+}
+
+#Info .col-4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#Info img{
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Info Section */

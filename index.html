@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="./css/mainstyle.css" type="text/css" rel="stylesheet" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/mainjs.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand bg-nav-link">
+            <div class="container-fluid">
+                <a class="navbar-brand">Dennis Evan</a>
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li> -->
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <a href="https://facebook.com">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </a>
+                        </svg>
+                    </li>
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <a href="https://twitter.com">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </a>
+                        </svg>
+                    </li>
+                    <li class="nav-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <a href="https://youtube.com">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                            </a>
+                        </svg>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+    <nav class="navbar navmain navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <a class="navbar-brand" href="index.html">
+                    <path
+                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                </a>
+            </svg>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Greeting">Greeting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Bio">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Info">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Story">Story</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Greeting Section -->
+    <section id="Greeting">
+        <div class="greeting-img">
+            <img src="./img/CVPic.jpg" alt="...">
+        </div>
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-8">
+                <div class="greeting-quote">
+                    <h1>Life <br>Is <br>About<br>Respect</h1><br>
+                    <h3>Nguyen Thanh Tung (Dennis Evan)</h3><br>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu sem integer. Felis imperdiet
+                        proin
+                        fermentum leo vel orci porta. Tristique magna sit amet purus gravida quis blandit. Elit sed
+                        vulputate mi sit amet mauris commodo quis imperdiet. Blandit massa enim nec dui nunc mattis. Sit
+                        amet nisl suscipit adipiscing bibendum est ultricies integer. Ac turpis egestas sed tempus urna
+                        et
+                        pharetra pharetra massa. Magna ac placerat vestibulum lectus mauris ultrices eros in. Egestas
+                        egestas fringilla phasellus faucibus scelerisque. Ante in nibh mauris cursus mattis molestie a
+                        iaculis. Sed arcu non odio euismod.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bio Section -->
+    <section id="Bio">
+        <div class="row">
+            <div class="col-8">
+                <div class="bio-img">
+                    <img src="./img/CVPic.jpg" alt="...">
+                </div>
+                <div class="bio-text">
+                    <h1>Welcome to my Portfolio</h1><br>
+                    <h3>Nguyen Thanh Tung (Dennis Evan)</h3><br>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Nibh nisl condimentum id venenatis a condimentum vitae sapien
+                        pellentesque. Blandit volutpat maecenas volutpat blandit. Diam in arcu cursus euismod quis
+                        viverra nibh cras pulvinar. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida
+                        neque. Volutpat odio facilisis mauris sit amet massa vitae tortor condimentum. Leo vel orci
+                        porta non pulvinar neque laoreet. Quam nulla porttitor massa id neque. Facilisis leo vel
+                        fringilla est ullamcorper. Tincidunt ornare massa eget egestas purus viverra accumsan. Sed
+                        turpis tincidunt id aliquet risus. Arcu risus quis varius quam quisque id diam vel quam. Quis
+                        ipsum suspendisse ultrices gravida dictum fusce ut. Orci porta non pulvinar neque laoreet
+                        suspendisse. Lorem donec massa sapien faucibus et molestie. Sed viverra tellus in hac habitasse
+                        platea. Semper eget duis at tellus at.<br><br>
+
+                        Suscipit adipiscing bibendum est ultricies integer quis auctor. Odio tempor orci dapibus
+                        ultrices in iaculis. Elementum nibh tellus molestie nunc non blandit massa enim nec. Lectus urna
+                        duis convallis convallis tellus id. Suspendisse sed nisi lacus sed viverra tellus in hac
+                        habitasse. Quam vulputate dignissim suspendisse in est ante in nibh mauris. Amet commodo nulla
+                        facilisi nullam vehicula. Dolor sit amet consectetur adipiscing. Egestas diam in arcu cursus.
+                        Congue quisque egestas diam in arcu cursus euismod quis viverra. Imperdiet massa tincidunt nunc
+                        pulvinar sapien. Etiam sit amet nisl purus.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="./img/bramble-cocktail.jpg" alt="...">
+            </div>
+        </div>
+    </section>
+    <!-- Info Section -->
+    <section id="Info">
+        <div class="container-fluid">
+            <h1>Info</h1>
+            <h3>Hobbies, Routines and Stuffs</h3><br>
+            <div class="row">
+                <div class="col-4">
+                    <div class="info-img-sports">
+                        <img src="./img/bramble-cocktail.jpg" alt="...">
+                    </div>
+                    <div class="info-text-sports">
+                        <h2>Sports</h2>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="info-img-games">
+                        <img src="./img/CVPic.jpg" alt="...">
+                    </div>
+                    <div class="info-text-games">
+                        <h2>Games</h2>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="info-img-musics">
+                        <img src="./img/bramble-cocktail.jpg" alt="...">
+                    </div>
+                    <div class="info-text-musics">
+                        <h2>Musics</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Story Section -->
+    <section id="Story">
+
+    </section>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+
