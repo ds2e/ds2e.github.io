@@ -45,7 +45,7 @@ h1 {
 }
 
 .carousel-inner {
-    height: 90vh;
+    height: 100vh;
 }
 
 .carousel-inner img {
@@ -205,9 +205,15 @@ div[class*="info-text"] {
     
 }
 
-/* LG */
 @media (max-width: 1199px) {
     .carousel-inner{
         height: fit-content;
+    }
+}
+
+/* Touch */
+@media (max-width: 767px) {
+    .nav-social{
+        flex-direction: row !important;
     }
 }
