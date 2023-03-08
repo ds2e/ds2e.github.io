@@ -45,7 +45,8 @@ h1 {
 }
 
 .carousel-inner {
-    height: 100vh;
+    height: fit-content;
+    max-height: 100vh;
 }
 
 .carousel-inner img {
@@ -206,13 +207,18 @@ div[class*="info-text"] {
 }
 
 @media (max-width: 1199px) {
-    .carousel-inner{
-        height: fit-content;
-    }
+
 }
 
 /* Touch */
 @media (max-width: 767px) {
+    .carousel-item{
+        aspect-ratio: 3/4;
+    }
+
+    .bio-text {
+        padding: 0.5em 1em;
+    }
     .nav-social{
         flex-direction: row !important;
     }
