@@ -1,67 +1,84 @@
-body{
-    color: rgb(150,96,66);
+body {
+    color: rgb(150, 96, 66);
 }
 
-h1{
+section:not(#Greeting) {
+    min-height: 100vh;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+h1 {
     font-size: 5em;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .navmain .container-fluid #navbarSupportedContent ul li a.active {
-    background-color: rgb(150,96,66);
+    background-color: rgb(150, 96, 66);
     border-radius: 30%;
 }
 
-.nav-item{
+.navbar-toggler {
+    border: 2px solid black !important;
+    border-radius: 10px !important;
+}
+
+
+.nav-item {
     margin-left: 1em;
     margin-right: 1em;
 }
 
-.nav-item path, .navmain path{
+.nav-item path,
+.navmain path {
     /* fill: rgb(225,207,197); */
-    fill: rgb(150,96,66);
+    fill: rgb(150, 96, 66);
 }
 
-.bg-nav-link{
+.bg-nav-link {
     background-color: rgb(244, 235, 230);
 }
 
-.navmain{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 99;
-    /* height: 20vh; */
+/* Banner / Carousel */
+.carousel-item{
+    aspect-ratio: 16/9;
 }
 
-section{
-    position: relative;
+.carousel-inner {
+    height: 90vh;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+}
+
+.carousel-item:nth-child(1) img{
+    object-position: bottom center;
+}
+
+.carousel-item:nth-child(2) img{
+    object-position: center center;
 }
 
 /* Greeting Section */
-#Greeting .col-4{
-    background-color: rgb(150,96,66);
+#Greeting{
+    background-color:rgb(244, 235, 230)
+}
+
+#Greeting .col-lg-4 {
+    background-color: rgb(150, 96, 66);
     height: 100vh;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
-#Greeting .col-8{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(244, 235, 230);
-    height: 100vh;
+.greeting-img {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
 }
 
-.greeting-img{
-    position: absolute;
-    width: 24%;
-    height:70%;
-    left: 21%;
-    top: 15%;
-    margin: auto;
-}
-
-#Greeting img{
+#Greeting img {
     border-top-left-radius: 50% 30%;
     border-top-right-radius: 50% 30%;
     width: 100%;
@@ -69,81 +86,128 @@ section{
     object-fit: cover;
 }
 
-.greeting-quote{
-    width: 40%;
+.greeting-quote {
     height: fit-content;
 }
+
 /* Greeting Section */
+
 /* Bio Section */
-#Bio .col-4{
-    /* background-color: rgb(150,96,66); */
-    height: 100vh;
+
+#Bio {
+    background-image: url('../img/fb-image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#Bio .col-8{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    height: 100vh;
-}
-
-.bio-img{
-    position: absolute;
-    width: 20%;
-    height:60%;
-    left: 5%;
-    top: 20%;
-    margin: auto;
-}
-
-#Bio img{
+.bio-img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
-.bio-text{
-    position: absolute;
-    left: 30%;
-    width: 30%;
-    height: fit-content;
+.bio-text {
+    border-radius: 10px;
+    padding: 1em 2em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    max-height: max(50vh, 50vw);
+    overflow-y: scroll;
+    overflow-x: scroll;
 }
+
+.bio-text::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+
+.bio-text::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.bio-text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-left: 2px solid rgba(0,0,0,0.5);
+}
+
+.bio-text::-webkit-scrollbar-corner{
+    background-color: transparent;
+}
+
 /* Bio Section */
+
 /* Info Section */
-#Info{
+#Info {
     height: 100vh;
     background-color: rgb(244, 235, 230);
 }
-#Info h1 ,#Info h3{
+
+#Info h1,
+#Info h3 {
     text-align: center;
 }
 
-#Info h1{
+#Info h1 {
     padding-top: 5%;
 }
 
-div[class*="info-img"]{
+div[class*="info-img"] {
     height: 70%;
     width: 70%;
 }
 
-div[class*="info-text"]{
+div[class*="info-text"] {
     position: absolute;
-    top : 80%;
+    top: 80%;
 }
 
-#Info .col-4{
+#Info .col-4 {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-#Info img{
+#Info img {
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /* Info Section */
+
+/* Media Queries */
+/* XS */
+@media (max-width: 575px) {
+    
+}
+
+/* SM */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+/* MD */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* LG */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+/* XL */
+@media (min-width: 1200px) {
+    
+}
+
+/* LG */
+@media (max-width: 1199px) {
+    .carousel-inner{
+        height: fit-content;
+    }
+}

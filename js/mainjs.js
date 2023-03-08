@@ -25,8 +25,8 @@
 // });
 
 
-$(window).scroll(function () {
-    var scrollDistance = $(window).scrollTop();
+document.addEventListener("scroll",function () {
+    var scrollDistance = window.scrollY;
 
     // Show/hide menu on scroll
     //if (scrollDistance >= 850) {
