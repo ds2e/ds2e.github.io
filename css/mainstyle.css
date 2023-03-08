@@ -141,33 +141,12 @@ h1 {
 
 /* Info Section */
 #Info {
-    height: 100vh;
     background-color: rgb(244, 235, 230);
 }
 
 #Info h1,
 #Info h3 {
     text-align: center;
-}
-
-#Info h1 {
-    padding-top: 5%;
-}
-
-div[class*="info-img"] {
-    height: 70%;
-    width: 70%;
-}
-
-div[class*="info-text"] {
-    position: absolute;
-    top: 80%;
-}
-
-#Info .col-4 {
-    position: relative;
-    display: flex;
-    justify-content: center;
 }
 
 #Info img {
@@ -179,6 +158,22 @@ div[class*="info-text"] {
 }
 
 /* Info Section */
+
+/* Story Section */
+#Story{
+    background-image: url("../img/altenative-image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#Story iframe{
+    min-width: 0 !important;
+    max-width: 100% !important;
+    min-height: 500px;
+}
+/* Story Section */
 
 /* Media Queries */
 /* XS */
