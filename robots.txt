@@ -1,3 +1,5 @@
 User-agent: *
-Disallow: /.git
-Sitemap: http://nguyenthanhtung09101996.com/sitemap.xml
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Sitemap: https://www.nguyenthanhtung09101996.com/sitemap.xml
