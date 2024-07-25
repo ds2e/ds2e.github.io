@@ -32,7 +32,7 @@ document.addEventListener("scroll", function () {
 
     // Assign active class to nav links while scolling
     $('section').each(function (i) {
-        if ($(this).position().top <= scrollDistance + 5) {
+        if ($(this).position().top <= scrollDistance + 100) {
             $('#navbarSupportedContent ul li a.active').removeClass('active');
             $('#navbarSupportedContent ul li a').eq(i).addClass('active');
         }
