@@ -21,11 +21,6 @@ h1 {
     place-items: center;
 }
 
-.navmain .container-fluid #navbarSupportedContent ul li a.active {
-    background-color: rgb(150, 96, 66);
-    border-radius: 30%;
-}
-
 .navbar {
     background-color: #9CAFAA;
     box-shadow: 1px 0px 5px black;
@@ -50,8 +45,7 @@ h1 {
     --bs-navbar-active-color: rgb(251, 243, 213);
 }
 
-.nav-item path,
-.navmain path {
+.nav-item path {
     fill: #9CAFAA;
 }
 
