@@ -24,6 +24,7 @@ h1 {
 .navbar {
     background-color: #9CAFAA;
     box-shadow: 1px 0px 5px black;
+    z-index: 99;
 }
 
 .navbar-toggler {
