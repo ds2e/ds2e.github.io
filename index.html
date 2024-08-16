@@ -30,8 +30,13 @@
     <link href="./css/mainstyle.css" type="text/css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <title>Nguyen Thanh Tung || Official Website</title>
 </head>
@@ -233,22 +238,111 @@
                     <div class="bio-img-container">
                         <img loading="lazy" src="./img/CVPic.jpg" alt="Bio Image">
                     </div>
+
                 </div>
-                <div class="col-10 col-lg-5">
-                    <div class="bio-text">
+                <div class="col-10 col-lg-3">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="size-100">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+                      </svg> -->
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
+                        <g fill="rgb(251, 243, 213)" stroke="currentColor">
+                            <path stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z"/>
+                            <text x="6" y="12" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to my Portfolio</text>
+                        </g>
+                      </svg> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
+                        <g fill="rgb(251, 243, 213)" stroke="currentColor">
+                            <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            <text x="7" y="12" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to my
+                                Portfolio</text>
+                        </g>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
+                        <g fill="rgb(251, 243, 213)" stroke="currentColor">
+                            <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
+                                d="M 21 12.5 A 8.38 8.38 90 0 0 20.1 8.7 A 8.5 8.5 90 0 0 12.5 4 A 8.38 8.38 90 0 0 8.7 4.9 L 3 3 L 4.9 8.7 A 8.38 8.38 90 0 0 4 12.5 A 8.5 8.5 90 0 0 8.7 20.1 A 8.38 8.38 90 0 0 12.5 21 H 13 A 8.48 8.48 90 0 0 21 13 V 12.5 Z" />
+                        </g>
+                        <g fill="currentColor" stroke="currentColor" stroke-width="0.05" font-size="1">
+                            <text x="8" y="12">My name is </text>
+                            <text x="8" y="14">Nguyen Thanh Tung</text>
+                        </g>
+                    </svg>
+                    <!-- <div class="spacer">
+
+                      </div> -->
+
+
+                    <!-- <div class="bio-text">
                         <h1 class="py-2">Welcome to my Portfolio</h1>
                         <h3 class="py-1">Nguyen Thanh Tung (Dennis Evan)</h3>
                         <p>
                             Here you can find and read informations about me.
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
         <!-- Phylosophie Section -->
-        <section class="container-fluid" id="Phylosophie">
-            <h1 class="text-center my-4">Phylosophie</h1>
-            <div class="row align-items-stretch justify-content-center">
+        <section class="container-fluid justify-content-center" id="Phylosophie">
+            <!-- <h1 class="text-center mt-4">Fun fact</h1> -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="phy-container d-flex flex-column justify-content-center">
+                            <h2>Life Is About Respect</h2><br>
+                            <h3>Core Belief</h3><br>
+                            <p>
+                                I believe respect is the essential and the core to existence.<br>
+                                The word "respect" is hard to fully understand and even for myself.<br>
+                                I'm still on the way to define the word and it's application.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="phy-container d-flex flex-column justify-content-center">
+                            <h2 class="text-center">Obsessed Image</h2><br>
+                            <div class="text-center my-4"><img src="./img/LoneWolves1.png" alt="LoneWolves"></div>
+                            <h3 class="text-center">Wolfpack Leader</h3><br>
+                            <p>
+                                I've got obsessed with the image of a wolf and i don't know why...<br>
+                                I don't even know what i would lead...<br>
+                                A company name idea? A company that works with entertainment businesses
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="phy-container d-flex flex-column justify-content-center">
+                            <h2 class="text-center">Latest Creation</h2><br>
+                            <div class="text-center my-4"><img src="./img/CGS_Logo.png" alt="CGS"></div>
+                            <h3 class="text-center">CGS</h3><br>
+                            <ul>
+                                <li>Trying to work on a web-making-tool as my Bachelorthesis</li>
+                                <li>Theoretically this would work with any framework which uses ES6 modules</li>
+                                <li>A lot of work to be done but it can be intergrated with AI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="phy-container d-flex flex-column justify-content-center">
+                            <h2 class="text-center">Other names</h2><br>
+                            <h3 class="text-center">Wolfpack Leader</h3><br>
+                            <ul>
+                                <li>Dennis Evan: the name comes to me when i opened my Facebook account with no intention. Supprisingly enough, not until i arrived at Germany, i realised that its abbreviation "DE" stands for Deutschland</li>
+                                <li>eN'TiTy: stands for the true abbreviation of my real name</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+            <!-- <div class="row align-items-stretch justify-content-center">
                 <div class="col-10 col-md-6 col-lg-4 mt-4">
                     <div class="phy-container d-flex flex-column justify-content-center">
                         <h2>Life Is About Respect</h2><br>
@@ -284,7 +378,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <!-- Info Section -->
