@@ -42,258 +42,164 @@
 </head>
 
 <body>
-    <!-- <header> -->
-    <nav class="navbar fixed-top navbar-expand-md" data-bs-theme="light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-house-door-fill" viewBox="0 0 16 16">
-
-                    <path
-                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
-                </svg>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#Bio">Bio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Phylosophie">Phylosophie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Info">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Story">Story</a>
-                    </li>
-                </ul>
-                <!-- <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
-                <div class="dropdown navbar-nav nav-social ms-auto">
-                    <!-- <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false"> -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-md" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                        class="bi bi-people-fill dropdown-toggle" data-bs-toggle="dropdown" viewBox="0 0 16 16">
+                        class="bi bi-house-door-fill" viewBox="0 0 16 16">
+
                         <path
-                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                            d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
                     </svg>
-                    <!-- </button> -->
-                    <div class="dropdown-menu dropdown-menu-md-end">
-                        <ul class="d-flex flex-md-column flex-row align-items-center justify-content-around">
-                            <li class="nav-item">
-                                <a href="//www.facebook.com/dennis.evan.9" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-facebook" viewBox="0 0 16 16">
-                                        <path
-                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </a>
 
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://twitter.com" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-twitter" viewBox="0 0 16 16">
-                                        <path
-                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#Bio">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Phylosophie">Phylosophie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Info">Info</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown navbar-nav nav-social ms-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-people-fill dropdown-toggle" data-bs-toggle="dropdown" viewBox="0 0 16 16">
+                            <path
+                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                        </svg>
+                        <div class="dropdown-menu dropdown-menu-md-end">
+                            <ul class="d-flex flex-md-column flex-row align-items-center justify-content-around">
+                                <li class="nav-item">
+                                    <a href="//www.facebook.com/dennis.evan.9" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
 
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="//www.youtube.com/@thanhtungnguyen9473" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-youtube" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://twitter.com" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
 
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="//www.linkedin.com/in/thanh-tung-nguyen-48a723203/" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="//www.instagram.com/_dennisevan/" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                        class="bi bi-instagram" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="//www.youtube.com/@thanhtungnguyen9473" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="//www.linkedin.com/in/thanh-tung-nguyen-48a723203/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="//www.instagram.com/_dennisevan/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <!-- <ul class="navbar-nav nav-social ms-auto">
-                    <li class="nav-item">
-                        <a href="//www.facebook.com/dennis.evan.9" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://twitter.com" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path
-                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="//www.youtube.com/@thanhtungnguyen9473" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-youtube" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="//www.linkedin.com/in/thanh-tung-nguyen-48a723203/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="//www.instagram.com/_dennisevan/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul> -->
             </div>
-        </div>
-    </nav>
-    <!-- </header> -->
-
-    <!-- Banner -->
-    <!-- <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="4000">
-                <img src="./img/altenative-image.jpg" class="d-block w-100 h-100" alt="item 1">
-            </div>
-            <div class="carousel-item" data-bs-interval="4000">
-                <img src="./img/fb-image.jpg" class="d-block w-100 h-100" alt="item 2">
-            </div>
-            <div class="carousel-item" data-bs-interval="4000">
-                <img src="./img/Sightseeing.jpg" class="d-block w-100 h-100" alt="item 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div> -->
-    <!-- Banner -->
+        </nav>
+    </header>
 
     <main>
         <!-- Bio Section -->
         <section class="container-fluid d-flex align-items-center justify-content-center" id="Bio">
             <div class="row align-items-center justify-content-center">
-                <div class="col-8 col-lg-4 mb-lg-0 mb-4">
+                <div class="col-8 col-lg-5 mb-lg-0 mb-4">
                     <div class="bio-img-container">
                         <img loading="lazy" src="./img/CVPic.jpg" alt="Bio Image">
                     </div>
 
                 </div>
-                <div class="col-10 col-lg-3">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" class="size-100">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
-                      </svg> -->
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
-                        <g fill="rgb(251, 243, 213)" stroke="currentColor">
-                            <path stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z"/>
-                            <text x="6" y="12" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to my Portfolio</text>
-                        </g>
-                      </svg> -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
-                        <g fill="rgb(251, 243, 213)" stroke="currentColor">
-                            <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-                            <text x="7" y="12" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to my
-                                Portfolio</text>
-                        </g>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
-                        <g fill="rgb(251, 243, 213)" stroke="currentColor">
-                            <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
-                                d="M 21 12.5 A 8.38 8.38 90 0 0 20.1 8.7 A 8.5 8.5 90 0 0 12.5 4 A 8.38 8.38 90 0 0 8.7 4.9 L 3 3 L 4.9 8.7 A 8.38 8.38 90 0 0 4 12.5 A 8.5 8.5 90 0 0 8.7 20.1 A 8.38 8.38 90 0 0 12.5 21 H 13 A 8.48 8.48 90 0 0 21 13 V 12.5 Z" />
-                        </g>
-                        <g fill="currentColor" stroke="currentColor" stroke-width="0.05" font-size="1">
-                            <text x="8" y="12">My name is </text>
-                            <text x="8" y="14">Nguyen Thanh Tung</text>
-                        </g>
-                    </svg>
-                    <!-- <div class="spacer">
-
-                      </div> -->
-
-
-                    <!-- <div class="bio-text">
-                        <h1 class="py-2">Welcome to my Portfolio</h1>
-                        <h3 class="py-1">Nguyen Thanh Tung (Dennis Evan)</h3>
-                        <p>
-                            Here you can find and read informations about me.
-                        </p>
-                    </div> -->
+                <div class="col-12 col-lg-5 d-md-block d-none">
+                    <div class="row">
+                        <div class="col-6 col-lg-12">
+                            <svg class="d-lg-block d-none" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
+                                <g fill="rgb(251, 243, 213)" stroke="currentColor">
+                                    <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                                    <text x="7" y="12" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to my
+                                        Portfolio</text>
+                                </g>
+                            </svg>
+                            <svg class="d-lg-none d-block" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
+                                <g fill="rgb(251, 243, 213)" stroke="currentColor">
+                                    <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
+                                        d="M 3 12.5 A 8.38 8.38 90 0 1 3.9 8.7 A 8.5 8.5 90 0 1 11.5 4 A 8.38 8.38 90 0 1 15.3 4.9 L 21 3 L 19.1 8.7 A 8.38 8.38 90 0 1 20 12.5 A 8.5 8.5 90 0 1 15.3 20.1 A 8.38 8.38 90 0 1 11.5 21 H 11 A 8.48 8.48 90 0 1 3 13 V 12.5 Z" />
+                                </g>
+                                <g fill="currentColor" stroke="currentColor" stroke-width="0.05" font-size="1">
+                                    <text x="6" y="13" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to my
+                                        Portfolio</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="col-6 col-lg-12">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
+                                <g fill="rgb(251, 243, 213)" stroke="currentColor">
+                                    <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
+                                        d="M 21 12.5 A 8.38 8.38 90 0 0 20.1 8.7 A 8.5 8.5 90 0 0 12.5 4 A 8.38 8.38 90 0 0 8.7 4.9 L 3 3 L 4.9 8.7 A 8.38 8.38 90 0 0 4 12.5 A 8.5 8.5 90 0 0 8.7 20.1 A 8.38 8.38 90 0 0 12.5 21 H 13 A 8.48 8.48 90 0 0 21 13 V 12.5 Z" />
+                                </g>
+                                <g fill="currentColor" stroke="currentColor" stroke-width="0.05" font-size="1">
+                                    <text x="8" y="12">My name is </text>
+                                    <text x="8" y="14">Nguyen Thanh Tung</text>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 d-md-none d-block text-center">
+                    <h1 class="fs-1">Welcome to my Portfolio!</h1>
+                    <h2 class="fs-2">My name is Nguyen Thanh Tung</h2>
+                    <p>Here you can find information about me.</p>
                 </div>
             </div>
         </section>
         <!-- Phylosophie Section -->
         <section class="container-fluid justify-content-center" id="Phylosophie">
-            <!-- <h1 class="text-center mt-4">Fun fact</h1> -->
             <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+
                     <div class="swiper-slide">
                         <div class="phy-container d-flex flex-column justify-content-center">
-                            <h2>Life Is About Respect</h2><br>
-                            <h3>Core Belief</h3><br>
+                            <h2 class="fs-2">Life Is About Respect</h2>
+                            <h3 class="fs-3">Core Belief</h3>
                             <p>
                                 I believe respect is the essential and the core to existence.<br>
                                 The word "respect" is hard to fully understand and even for myself.<br>
@@ -303,9 +209,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="phy-container d-flex flex-column justify-content-center">
-                            <h2 class="text-center">Obsessed Image</h2><br>
+                            <h2 class="text-center fs-2">Obsessed Image</h2>
                             <div class="text-center my-4"><img src="./img/LoneWolves1.png" alt="LoneWolves"></div>
-                            <h3 class="text-center">Wolfpack Leader</h3><br>
+                            <h3 class="text-center fs-3">Wolfpack Leader</h3>
                             <p>
                                 I've got obsessed with the image of a wolf and i don't know why...<br>
                                 I don't even know what i would lead...<br>
@@ -315,9 +221,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="phy-container d-flex flex-column justify-content-center">
-                            <h2 class="text-center">Latest Creation</h2><br>
+                            <h2 class="text-center fs-2">Latest Creation</h2>
                             <div class="text-center my-4"><img src="./img/CGS_Logo.png" alt="CGS"></div>
-                            <h3 class="text-center">CGS</h3><br>
+                            <h3 class="text-center fs-3">CGS</h3>
                             <ul>
                                 <li>Trying to work on a web-making-tool as my Bachelorthesis</li>
                                 <li>Theoretically this would work with any framework which uses ES6 modules</li>
@@ -327,64 +233,44 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="phy-container d-flex flex-column justify-content-center">
-                            <h2 class="text-center">Other names</h2><br>
-                            <h3 class="text-center">Wolfpack Leader</h3><br>
+                            <h2 class="text-center fs-2">Other nicknames</h2>
                             <ul>
-                                <li>Dennis Evan: the name comes to me when i opened my Facebook account with no intention. Supprisingly enough, not until i arrived at Germany, i realised that its abbreviation "DE" stands for Deutschland</li>
+                                <li>Dennis Evan: the name comes to me when i opened my Facebook account with no
+                                    intention. Supprisingly enough, not until i arrived at Germany, i realised that its
+                                    abbreviation "DE" stands for Deutschland</li>
                                 <li>eN'TiTy: stands for the true abbreviation of my real name</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
 
             </div>
-            <!-- <div class="row align-items-stretch justify-content-center">
-                <div class="col-10 col-md-6 col-lg-4 mt-4">
-                    <div class="phy-container d-flex flex-column justify-content-center">
-                        <h2>Life Is About Respect</h2><br>
-                        <h3>Core Belief</h3><br>
-                        <p>
-                            I believe respect is the essential and the core to existence.<br>
-                            The word "respect" is hard to fully understand and even for myself.<br>
-                            I'm still on the way to define the word and it's application.
-                        </p>
-                    </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="container-fluid d-flex flex-column align-items-center justify-content-center" id="Experience">
+            <h1 class="fs-1 mb-5">Work Experience</h1>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <h2 class="fs-2">Sony Music Entertainment GmbH</h2>
+                    <h3 class="fs-3">6 months</h3>
+                    <p>First Internship &#47; Experience</p>
+                    <p>Getting to know the team and the experience in the field, especially at a big company, has helped me a lot in looking at a bigger picture.</p>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 mt-4">
-                    <div class="phy-container d-flex flex-column">
-                        <h2 class="text-center">Obsessed Image</h2><br>
-                        <div class="text-center my-4"><img src="./img/LoneWolves1.png" alt="LoneWolves"></div>
-                        <h3 class="text-center">Wolfpack Leader</h3><br>
-                        <p>
-                            I've got obsessed with the image of a wolf and i don't know why...<br>
-                            I don't even know what i would lead...<br>
-                            A company name idea? A company that works with entertainment businesses
-                        </p>
-                    </div>
+                <div class="col-5">
+                    <h2 class="fs-2">Unfortunately ... We discovered a 404&#33;</h2>
+                    <p>Contact me through my socials if you would like to help me in earning more experience. Thank you so much &#58;&#41;</p>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 mt-4">
-                    <div class="phy-container d-flex flex-column">
-                        <h2 class="text-center">Latest Creation</h2><br>
-                        <div class="text-center my-4"><img src="./img/CGS_Logo.png" alt="CGS"></div>
-                        <h3 class="text-center">CGS</h3><br>
-                        <p>
-                            Trying to work on a web-making-tool as my Bachelorthesis<br>
-                            Theoretically this would work with any framework with modules ... ?<br>
-                            A lot of work to be done but it can be intergrated with AI
-                        </p>
-                    </div>
-                </div>
-            </div> -->
+            </div>
         </section>
 
         <!-- Info Section -->
         <section class="container-fluid d-flex flex-column align-items-center justify-content-center" id="Info">
-            <h1 class="pt-5">Info</h1>
-            <h3>Hobbies, Routines and Stuffs</h3><br>
+            <h1 class="fs-1 pt-5">Info</h1>
+            <h3 class="fs-3">Hobbies, Routines and Stuffs</h3><br>
             <div class="row align-items-center justify-content-around mt-4 pb-5">
                 <div class="col-8 col-md-3 d-flex flex-column align-items-center mt-5">
                     <div class="info-img-sports">
@@ -415,127 +301,10 @@
                 </div>
             </div>
         </section>
-        <!-- Story Section -->
-        <section class="container-fluid d-flex align-items-center justify-content-center" id="Story">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 col-10 text-center">
-                    <div class="iframe-holder">
-                        <blockquote class="instagram-media" data-instgrm-captioned
-                            data-instgrm-permalink="https://www.instagram.com/p/BS1jN3pBGGo/?utm_source=ig_embed&amp;utm_campaign=loading"
-                            data-instgrm-version="14"
-                            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; padding:0;">
-                            <div style="padding:16px;"> <a
-                                    href="https://www.instagram.com/p/BS1jN3pBGGo/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                                    target="_blank">
-                                    <div style=" display: flex; flex-direction: row; align-items: center;">
-                                        <div
-                                            style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                                        </div>
-                                        <div
-                                            style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                                            <div
-                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                                            </div>
-                                            <div
-                                                style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="padding: 19% 0;"></div>
-                                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg
-                                            width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                                            xmlns="https://www.w3.org/2000/svg"
-                                            xmlns:xlink="https://www.w3.org/1999/xlink">
-                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                                    <g>
-                                                        <path
-                                                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                                                        </path>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg></div>
-                                    <div style="padding-top: 8px;">
-                                        <div
-                                            style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                                            Sieh dir diesen Beitrag auf Instagram an</div>
-                                    </div>
-                                    <div style="padding: 12.5% 0;"></div>
-                                    <div
-                                        style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                                        <div>
-                                            <div
-                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
-                                            </div>
-                                            <div
-                                                style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
-                                            </div>
-                                            <div
-                                                style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
-                                            </div>
-                                        </div>
-                                        <div style="margin-left: 8px;">
-                                            <div
-                                                style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
-                                            </div>
-                                            <div
-                                                style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
-                                            </div>
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <div
-                                                style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
-                                            </div>
-                                            <div
-                                                style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
-                                            </div>
-                                            <div
-                                                style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-                                        <div
-                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
-                                        </div>
-                                        <div
-                                            style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
-                                        </div>
-                                    </div>
-                                </a>
-                                <p
-                                    style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
-                                    <a href="https://www.instagram.com/p/BS1jN3pBGGo/?utm_source=ig_embed&amp;utm_campaign=loading"
-                                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-                                        target="_blank">Ein Beitrag geteilt von Dennis Evan (@_dennisevan)</a>
-                                </p>
-                            </div>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-10 text-center">
-                    <div class="iframe-holder">
-                        <div class="fb-post" data-href="https://www.facebook.com/dennis.evan.9/posts/5705628089539702"
-                            data-width="500" data-show-text="true">
-                            <blockquote cite="https://www.facebook.com/dennis.evan.9/posts/5705628089539702"
-                                class="fb-xfbml-parse-ignore">Gepostet von <a
-                                    href="https://www.facebook.com/dennis.evan.9">Nguyễn Thanh Tùng</a> am&nbsp;<a
-                                    href="https://www.facebook.com/dennis.evan.9/posts/5705628089539702">Samstag, 1.
-                                    Juli 2023</a>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
         <div class="container-fluid p-2">
-            <h1 class="text-center">About</h1>
             <h3 class="text-center">Nguyen Thanh Tung</h3>
             <p>ds2e.github.io</p>
         </div>
@@ -546,11 +315,6 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 
-
-<script async src="//www.instagram.com/embed.js"></script>
-<script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v20.0&appId=581767150337475"
-    nonce="9pRXkszl"></script>
 <script src="./js/mainjs.js"></script>
 
 </html>

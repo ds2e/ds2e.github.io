@@ -1,14 +1,26 @@
+/* *{
+    border: 1px red solid;
+} */
+
+:root{
+    --color-theme: rgb(239, 188, 155);
+    --color-cream: rgb(251, 243, 213);
+}
+
 body,
 html {
     padding: 0;
     margin: 0;
 }
 
+html{
+    scroll-padding-top: 2em;
+}
+
 section {
     min-height: 100vh;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 2em;
-    scroll-padding-top: 2em;
 }
 
 h1 {
@@ -104,7 +116,10 @@ main {
 
 /* Phylosophie Section */
 #Phylosophie {
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/fb-image.jpg');
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.75) 0 5%, rgba(0, 0, 0, 0) 15% 85%, rgba(0, 0, 0, 0.75) 95%), 
+    linear-gradient(to right, rgba(0, 0, 0, 0.5) 0 5%, rgba(0, 0, 0, 0) 20% 80%, rgba(0, 0, 0, 0.5) 95%),
+    url('../img/fb-image.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,6 +148,7 @@ main {
 
 .swiper-slide-active{
     transform: scale(0.85) !important;
+    border-radius: -50% / 5px;
 }
 
 .swiper-slide-next{
@@ -143,14 +159,14 @@ main {
 
 .phy-container {
     border-radius: 10px;
-    padding: 1em 2em;
-    background-color: rgba(251, 243, 213, 0.5);
+    padding: 1em 1em;
+    background-color: rgba(251, 243, 213, 0.75);
     border: 1px solid white;
     height: 100%;
 }
 
 .phy-container img {
-    width: 50%;
+    width: 40%;
 }
 
 /* Phylosophie Section */
@@ -158,11 +174,16 @@ main {
 /* Bio Section */
 
 #Bio {
-    background-color: rgb(239, 188, 155);
-    border-bottom-left-radius: 50% 5%;
-    border-bottom-right-radius: 50% 5%;
+    background-color: var(--color-theme);
+    border-bottom-left-radius: 50% 25px;
+    border-bottom-right-radius: 50% 25px;
+    box-shadow: 0 0em 1em black;
     position: inherit;
     z-index: 2;
+}
+
+#Bio svg {
+    width: 100%;
 }
 
 .bio-img-container {
@@ -224,16 +245,30 @@ main {
 
 /* Bio Section */
 
-/* Info Section */
-#Info {
-    color: rgb(251, 243, 213);
-    text-shadow: 1px 2px 5px black;
-    /* background-color: rgb(0, 14, 94); */
-    background-color: rgb(0, 9, 59);
-    border-radius: 50% / 5%;
+/* Experience Section */
+#Experience {
+    /* color: rgb(251, 243, 213); */
+    /* text-shadow: 1px 2px 5px black; */
+    background-color: var(--color-theme);
+    border-radius: 50% / 25px;
+    box-shadow: 0 0 1em black;
     margin-top: -5em;
     position: inherit;
     z-index: 2;
+}
+
+/* Experience Section */
+
+/* Info Section */
+#Info {
+    color: var(--color-cream);
+    text-shadow: 1px 2px 5px black;
+    /* background-color: rgb(0, 14, 94); */
+    background-color: var(--color-theme);
+    /* border-radius: 50% / 25px;
+    margin-top: -5em; */
+    position: inherit;
+    z-index: -1;
 }
 
 #Info .info-text {
@@ -281,9 +316,10 @@ main {
 #Info img {
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
+    /* border: solid var(--color-cream) 5px; */
     width: 100%;
     height: 100%;
-    box-shadow: 0em 0.5em 5em rgb(0, 38, 255, 0.85);
+    /* box-shadow: 0em 0.5em 5em black; */
     position: relative;
 }
 
@@ -291,69 +327,27 @@ main {
 .info-img-musics {
     padding: 0.5em 0.5em 0.25em 0.5em;
     background: linear-gradient(#000524, #000a4d 90%, #0026ff);
-    /* background: linear-gradient(#e66465, #9198e5); */
     border: solid 1em;
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
-    border-bottom-color: rgb(0, 21, 139);
-    border-left-color: rgb(0, 10, 77);
-    border-right-color: rgb(0, 10, 77);
-    border-top-color: rgb(0, 8, 61);
-    /* box-shadow: 0 0 0.5em 0 rgba(251, 243, 213, .5) inset, 0 0.25em 0.5em 0.25em rgba(251, 243, 213, .5); */
-    box-shadow: 0 0em 0em 1em rgba(0, 8, 61, 0.85) inset;
+    border-bottom-color: rgb(239, 201, 175);
+    border-left-color: rgb(240, 165, 114);
+    border-right-color: rgb(240, 165, 114);
+    border-top-color: rgb(241, 156, 99);
+    box-shadow: 0 0em 0em 1em rgb(240, 165, 114) inset;
 }
 
-.info-text-sports{
-    transform: perspective(500px) rotateY(-5deg) rotateZ(5deg) rotateX(-5deg);
-}
-
-.info-text-musics{
-    transform: perspective(500px) rotateY(5deg) rotateZ(-5deg) rotateX(5deg);
-}
-
-.info-img-sports {
-    transform: perspective(200px) rotateY(-3deg);
-}
-
-.info-img-musics {
-    transform: perspective(200px) rotateY(3deg);
-}
-
-#Info .info-img-games {
+/* #Info .info-img-games {
     padding: 0.5em 0.5em 0 0.5em;
-    /* background: linear-gradient( #000524,#000e5e ); */
-    /* background: linear-gradient(#e66465, #9198e5); */
     border: solid 1em;
     border-bottom-color: rgb(0, 21, 139);
     border-left-color: rgb(0, 10, 77);
     border-right-color: rgb(0, 10, 77);
     border-top-color: rgb(0, 8, 61);
-    /* box-shadow: 0 0 0.5em 0 rgba(251, 243, 213, .5) inset, 0 0.25em 0.5em 0.25em rgba(251, 243, 213, .5); */
     box-shadow: 0 0em 0em 1em rgba(0, 10, 77, .75) inset;
-}
+} */
 
 /* Info Section */
-
-/* Story Section */
-#Story {
-    background-image: linear-gradient(rgb(255, 255, 255, 0.75), rgb(255, 255, 255, 0.75)), url("../img/altenative-image.jpg");
-    /* background-color: rgb(239, 188, 155); */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#Story .iframe-holder {
-    box-shadow: 0 1em 1em black;
-}
-
-#Story iframe {
-    /* min-width: 0 !important; */
-    width: fit-content;
-    min-height: fit-content;
-}
-
-/* Story Section */
 
 /* Footer */
 footer {
