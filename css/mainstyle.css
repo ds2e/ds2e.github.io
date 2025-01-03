@@ -2,9 +2,10 @@
     border: 1px red solid;
 } */
 
-:root{
-    --color-theme: rgb(239, 188, 155);
+:root {
+    --color-theme: #efbc9b;
     --color-cream: rgb(251, 243, 213);
+    --color-theme-secondary: #9CAFAA;
 }
 
 body,
@@ -13,14 +14,12 @@ html {
     margin: 0;
 }
 
-html{
+html {
     scroll-padding-top: 2em;
 }
 
 section {
     min-height: 100vh;
-    padding-top: 1em;
-    padding-bottom: 2em;
 }
 
 h1 {
@@ -38,7 +37,7 @@ main {
 }
 
 .navbar {
-    background-color: #9CAFAA;
+    background-color: var(--color-theme-secondary);
     box-shadow: 1px 0px 5px black;
     z-index: 99;
 }
@@ -63,7 +62,7 @@ main {
 }
 
 .nav-item path {
-    fill: #9CAFAA;
+    fill: var(--color-cream);
 }
 
 .dropdown-toggle {
@@ -113,63 +112,6 @@ main {
 .carousel-item:nth-child(3) img {
     object-position: center center;
 }
-
-/* Phylosophie Section */
-#Phylosophie {
-    background-image: 
-    linear-gradient(to top, rgba(0, 0, 0, 0.75) 0 5%, rgba(0, 0, 0, 0) 15% 85%, rgba(0, 0, 0, 0.75) 95%), 
-    linear-gradient(to right, rgba(0, 0, 0, 0.5) 0 5%, rgba(0, 0, 0, 0) 20% 80%, rgba(0, 0, 0, 0.5) 95%),
-    url('../img/fb-image.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -5em;
-    position: inherit;
-    z-index: 1;
-}
-
-#Phylosophie h1 {
-    color: rgb(251, 243, 213);
-    text-shadow: 1px 2px 5px black;
-}
-
-/* Swiper */
-.swiper {
-    width: 100%;
-    height: 85%;
-    padding: 50px !important;
-}
-
-.swiper-slide-prev {
-    transform-style: flat !important;
-    transform: perspective(500px) rotateY(5deg) scale(0.95) !important;
-    opacity: 0.7;
-}
-
-.swiper-slide-active{
-    transform: scale(0.85) !important;
-    border-radius: -50% / 5px;
-}
-
-.swiper-slide-next{
-    transform-style: flat !important;
-    transform: perspective(500px) rotateY(-5deg) scale(0.95) !important;
-    opacity: 0.7;
-}
-
-.phy-container {
-    border-radius: 10px;
-    padding: 1em 1em;
-    background-color: rgba(251, 243, 213, 0.75);
-    border: 1px solid white;
-    height: 100%;
-}
-
-.phy-container img {
-    width: 40%;
-}
-
-/* Phylosophie Section */
 
 /* Bio Section */
 
@@ -245,114 +187,128 @@ main {
 
 /* Bio Section */
 
+/* Phylosophie Section */
+#Phylosophie {
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.75) 0 5%, rgba(0, 0, 0, 0) 15% 85%, rgba(0, 0, 0, 1) 95%),
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0 5%, rgba(0, 0, 0, 0) 20% 80%, rgba(0, 0, 0, 0.5) 95%),
+        url('../img/fb-image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -5em;
+    position: inherit;
+    z-index: 1;
+}
+
+#Phylosophie h1 {
+    color: rgb(251, 243, 213);
+    text-shadow: 1px 2px 5px black;
+}
+
+/* Swiper */
+.swiper {
+    width: 100%;
+    height: 85%;
+    padding: 50px !important;
+}
+
+.swiper-slide-prev {
+    transform-style: flat !important;
+    transform: perspective(500px) rotateY(5deg) scale(0.95) !important;
+    opacity: 0.7;
+}
+
+.swiper-slide-active {
+    transform: scale(0.85) !important;
+    border-radius: -50% / 5px;
+}
+
+.swiper-slide-next {
+    transform-style: flat !important;
+    transform: perspective(500px) rotateY(-5deg) scale(0.95) !important;
+    opacity: 0.7;
+}
+
+.phy-container {
+    border-radius: 10px;
+    padding: 1em 1em;
+    background-color: rgba(251, 243, 213, 0.75);
+    border: 1px solid white;
+    height: 100%;
+}
+
+.phy-container img {
+    width: 40%;
+}
+
+/* Phylosophie Section */
+
 /* Experience Section */
 #Experience {
-    /* color: rgb(251, 243, 213); */
-    /* text-shadow: 1px 2px 5px black; */
+    text-shadow: 0 0 5px var(--color-cream);
     background-color: var(--color-theme);
-    border-radius: 50% / 25px;
-    box-shadow: 0 0 1em black;
+    border-top-left-radius: 50% 25px;
+    border-top-right-radius: 50% 25px;
+    box-shadow: 0 -0.5em 0.5em black;
     margin-top: -5em;
     position: inherit;
     z-index: 2;
 }
 
+.divider, .divider-180 {
+    filter: drop-shadow(5px 3px 3px black);
+    position: inherit;
+    z-index: 1;
+}
+
+.divider-180{
+    transform: rotateX(180deg);
+    margin-top: -120px;
+}
 /* Experience Section */
 
 /* Info Section */
 #Info {
+    background-color: var(--color-theme-secondary);
+    margin-top: -100px;
+    padding-bottom: calc(1.5rem + 100px);
+}
+
+#Info h1, #Info h3{
     color: var(--color-cream);
     text-shadow: 1px 2px 5px black;
-    /* background-color: rgb(0, 14, 94); */
-    background-color: var(--color-theme);
-    /* border-radius: 50% / 25px;
-    margin-top: -5em; */
-    position: inherit;
-    z-index: -1;
 }
 
-#Info .info-text {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 3em;
-    border: solid 1em;
-    border-bottom-color: rgba(255, 255, 255, 0.7);
-    border-left-color: rgba(255, 255, 255, 0.9);
-    border-right-color: rgba(255, 255, 255, 0.9);
-    border-top-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 2em 0 rgba(0, 0, 0, .75), 0 0.5em 1em 0.5em rgba(251, 243, 213, .5) inset;
-
-    /* animation-name: turnBackSign;
-    animation-duration: 1s;
-    animation-fill-mode: both; */
-    /* transition: transform 2s ease-in-out; */
+#Info #infoAccordion{
+    --bs-accordion-btn-bg: var(--color-cream);
+    --bs-accordion-active-bg: var(--color-theme);
+    --bs-accordion-active-color: black;
+    --bs-accordion-btn-focus-box-shadow: inset 0 0 1em var(--color-theme-secondary);
+    --bs-accordion-border-width: 0;
 }
 
-/* #Info .info-text:hover {
-    animation-name: turnSign;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-} */
-
-/* @keyframes turnSign {
-    from {
-        transform: perspective(200px) rotateX(15deg);
-    }
-
-    to {
-        transform: perspective(200px) rotateX(0deg);
-    }
+#Info #infoAccordion .accordion-button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
-
-@keyframes turnBackSign {
-    to {
-        transform: perspective(200px) rotateX(15deg);
-    }
-
-    from {
-        transform: perspective(200px) rotateX(0deg);
-    }
-} */
 
 #Info img {
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
-    /* border: solid var(--color-cream) 5px; */
     width: 100%;
     height: 100%;
-    /* box-shadow: 0em 0.5em 5em black; */
     position: relative;
 }
-
-#Info .info-img-sports,
-.info-img-musics {
-    padding: 0.5em 0.5em 0.25em 0.5em;
-    background: linear-gradient(#000524, #000a4d 90%, #0026ff);
-    border: solid 1em;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-color: rgb(239, 201, 175);
-    border-left-color: rgb(240, 165, 114);
-    border-right-color: rgb(240, 165, 114);
-    border-top-color: rgb(241, 156, 99);
-    box-shadow: 0 0em 0em 1em rgb(240, 165, 114) inset;
-}
-
-/* #Info .info-img-games {
-    padding: 0.5em 0.5em 0 0.5em;
-    border: solid 1em;
-    border-bottom-color: rgb(0, 21, 139);
-    border-left-color: rgb(0, 10, 77);
-    border-right-color: rgb(0, 10, 77);
-    border-top-color: rgb(0, 8, 61);
-    box-shadow: 0 0em 0em 1em rgba(0, 10, 77, .75) inset;
-} */
 
 /* Info Section */
 
 /* Footer */
 footer {
-    background-color: #9CAFAA;
-    box-shadow: 0 0 1em black;
+    background-color: var(--color-theme);
+    /* box-shadow: 0 0 1em black; */
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
 }
 
 /* Footer */
@@ -387,6 +343,19 @@ footer {
 
 /* Touch */
 @media (max-width: 767px) {
+    section {
+        min-height: 750px;
+    }
+
+    #Bio{
+        text-shadow: 0 0 5px var(--color-cream);
+    }
+
+    .divider {
+        margin-top: -2px;
+        vertical-align: top;
+    }
+
     .carousel-item {
         aspect-ratio: 3/4;
     }

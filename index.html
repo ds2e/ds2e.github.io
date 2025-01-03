@@ -27,7 +27,9 @@
     <meta property="og:image" content="http://nguyenthanhtung09101996.com/img/fb-image.jpg" />
     <meta property="fb:app_id" content="581767150337475" />
 
-    <link href="./css/mainstyle.css" type="text/css" rel="stylesheet" />
+    <link href="./css/mainstyle.css" rel="preload" as="style" onload="this.rel='stylesheet'" type="text/css" />
+    <!-- <script rel="preload" as="script" src="./js/mainjs.js"></script> -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -44,7 +46,7 @@
 <body>
     <header class="fixed-top">
         <nav class="navbar navbar-expand-md" data-bs-theme="light">
-            <div class="container-fluid">
+            <div class="container-fluid py-2">
                 <a class="navbar-brand" href="./">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                         class="bi bi-house-door-fill" viewBox="0 0 16 16">
@@ -62,16 +64,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#Bio">Bio</a>
+                            <a class="nav-link active" href="#Bio"><span class="fs-5">Bio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Phylosophie">Phylosophie</a>
+                            <a class="nav-link" href="#Phylosophie"><span class="fs-5">Phylosophie</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Experience">Experience</a>
+                            <a class="nav-link" href="#Experience"><span class="fs-5">Experience</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Info">Info</a>
+                            <a class="nav-link" href="#Info"><span class="fs-5">Info</span></a>
                         </li>
                     </ul>
                     <div class="dropdown navbar-nav nav-social ms-auto">
@@ -140,7 +142,7 @@
 
     <main>
         <!-- Bio Section -->
-        <section class="container-fluid d-flex align-items-center justify-content-center" id="Bio">
+        <section class="container-fluid d-flex align-items-center justify-content-center py-5 mt-5" id="Bio">
             <div class="row align-items-center justify-content-center">
                 <div class="col-8 col-lg-5 mb-lg-0 mb-4">
                     <div class="bio-img-container">
@@ -151,21 +153,25 @@
                 <div class="col-12 col-lg-5 d-md-block d-none">
                     <div class="row">
                         <div class="col-6 col-lg-12">
-                            <svg class="d-lg-block d-none" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
+                            <svg class="d-lg-block d-none" xmlns="http://www.w3.org/2000/svg" width="500" height="500"
+                                viewBox="0 0 24 24">
                                 <g fill="rgb(251, 243, 213)" stroke="currentColor">
                                     <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
                                         d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-                                    <text x="7" y="12" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to my
+                                    <text x="7" y="12" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to
+                                        my
                                         Portfolio</text>
                                 </g>
                             </svg>
-                            <svg class="d-lg-none d-block" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 24 24">
+                            <svg class="d-lg-none d-block" xmlns="http://www.w3.org/2000/svg" width="500" height="500"
+                                viewBox="0 0 24 24">
                                 <g fill="rgb(251, 243, 213)" stroke="currentColor">
                                     <path stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round"
                                         d="M 3 12.5 A 8.38 8.38 90 0 1 3.9 8.7 A 8.5 8.5 90 0 1 11.5 4 A 8.38 8.38 90 0 1 15.3 4.9 L 21 3 L 19.1 8.7 A 8.38 8.38 90 0 1 20 12.5 A 8.5 8.5 90 0 1 15.3 20.1 A 8.38 8.38 90 0 1 11.5 21 H 11 A 8.48 8.48 90 0 1 3 13 V 12.5 Z" />
                                 </g>
                                 <g fill="currentColor" stroke="currentColor" stroke-width="0.05" font-size="1">
-                                    <text x="6" y="13" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to my
+                                    <text x="6" y="13" stroke-width="0.05" font-size="1" fill="currentColor">Welcome to
+                                        my
                                         Portfolio</text>
                                 </g>
                             </svg>
@@ -254,53 +260,231 @@
         <section class="container-fluid d-flex flex-column align-items-center justify-content-center" id="Experience">
             <h1 class="fs-1 mb-5">Work Experience</h1>
             <div class="row justify-content-center">
-                <div class="col-5">
+                <div class="col-8 col-md-5">
                     <h2 class="fs-2">Sony Music Entertainment GmbH</h2>
                     <h3 class="fs-3">6 months</h3>
                     <p>First Internship &#47; Experience</p>
-                    <p>Getting to know the team and the experience in the field, especially at a big company, has helped me a lot in looking at a bigger picture.</p>
+                    <p>Getting to know the team and the experience in the field, especially at a big company, has helped
+                        me a lot in looking at a bigger picture.</p>
                 </div>
-                <div class="col-5">
+                <div class="col-8 col-md-5">
                     <h2 class="fs-2">Unfortunately ... We discovered a 404&#33;</h2>
-                    <p>Contact me through my socials if you would like to help me in earning more experience. Thank you so much &#58;&#41;</p>
+                    <p>Contact me through my socials if you would like to help me in earning more experience. Thank you
+                        so much &#58;&#41;</p>
                 </div>
             </div>
         </section>
 
+        <svg class="divider w-100" preserveAspectRatio="xMidYMax slice" height="100px"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2001 77">
+            <g fill="#efbc9b">
+                <path opacity=".5" d="M1993 46V24l-19-11-19 11v22l19 11 19-11zM1942 72V60l-10-5-10 5v12l10 5 10-5z" />
+                <path opacity=".75" d="M1961 52V36l-14-8-14 8v16l14 9 14-9zM1969 69v-8l-7-4-6 4v8l6 4 7-4z" />
+                <path opacity=".5" d="M1871 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1903 52V36l14-8 14 8v16l-14 9-14-9zM1895 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1855 46V24l-19-11-19 11v22l19 11 19-11zM1803 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M1823 52V36l-14-8-14 8v16l14 9 14-9zM1831 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1733 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1765 52V36l14-8 14 8v16l-14 9-14-9zM1757 69v-8l6-4 7 4v8l-7 4-6-4z" />
+                <path opacity=".5" d="M1717 46V24l-19-11-19 11v22l19 11 19-11zM1665 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M1685 52V36l-14-8-14 8v16l14 9 14-9zM1693 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1594 46V24l19-11 20 11v22l-20 11-19-11z" />
+                <path opacity=".75" d="M1626 52V36l14-8 15 8v16l-15 9-14-9zM1618 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1579 46V24l-19-11-20 11v22l20 11 19-11zM1527 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M1547 52V36l-14-8-15 8v16l15 9 14-9zM1555 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1456 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1488 52V36l14-8 14 8v16l-14 9-14-9zM1480 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1441 46V24l-20-11-19 11v22l19 11 20-11zM1389 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M1408 52V36l-14-8-14 8v16l14 9 14-9zM1416 69v-8l-6-4-7 4v8l7 4 6-4z" />
+                <path opacity=".5" d="M1318 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1350 52V36l14-8 14 8v16l-14 9-14-9zM1342 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1302 46V24l-19-11-19 11v22l19 11 19-11zM1251 72V60l-10-5-10 5v12l10 5 10-5z" />
+                <path opacity=".75" d="M1270 52V36l-14-8-14 8v16l14 9 14-9zM1278 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1180 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1212 52V36l14-8 14 8v16l-14 9-14-9zM1204 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1164 46V24l-19-11-19 11v22l19 11 19-11zM1112 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M1132 52V36l-14-8-14 8v16l14 9 14-9zM1140 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1041 46V24l20-11 19 11v22l-19 11-20-11z" />
+                <path opacity=".75" d="M1074 52V36l14-8 14 8v16l-14 9-14-9zM1066 69v-8l6-4 7 4v8l-7 4-6-4z" />
+                <path opacity=".5" d="M1026 46V24l-19-11-20 11v22l20 11 19-11zM974 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M994 52V36l-14-8-14 8v16l14 9 14-9zM1002 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M903 46V24l19-11 20 11v22l-20 11-19-11z" />
+                <path opacity=".75" d="M935 52V36l14-8 15 8v16l-15 9-14-9zM927 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M888 46V24l-20-11-19 11v22l19 11 20-11zM836 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M856 52V36l-15-8-14 8v16l14 9 15-9zM864 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M765 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M797 52V36l14-8 14 8v16l-14 9-14-9zM789 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M749 46V24l-19-11-19 11v22l19 11 19-11zM698 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M717 52V36l-14-8-14 8v16l14 9 14-9zM725 69v-8l-7-4-6 4v8l6 4 7-4z" />
+                <path opacity=".5" d="M627 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M659 52V36l14-8 14 8v16l-14 9-14-9zM651 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M611 46V24l-19-11-19 11v22l19 11 19-11zM560 72V60l-10-5-10 5v12l10 5 10-5z" />
+                <path opacity=".75" d="M579 52V36l-14-8-14 8v16l14 9 14-9zM587 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M489 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M521 52V36l14-8 14 8v16l-14 9-14-9zM513 69v-8l7-4 6 4v8l-6 4-7-4z" />
+                <path opacity=".5" d="M473 46V24l-19-11-19 11v22l19 11 19-11zM421 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M441 52V36l-14-8-14 8v16l14 9 14-9zM449 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M350 46V24l20-11 19 11v22l-19 11-20-11z" />
+                <path opacity=".75" d="M382 52V36l15-8 14 8v16l-14 9-15-9zM374 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M335 46V24l-19-11-20 11v22l20 11 19-11zM283 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M303 52V36l-14-8-14 8v16l14 9 14-9zM311 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M212 46V24l19-11 20 11v22l-20 11-19-11z" />
+                <path opacity=".75" d="M244 52V36l14-8 14 8v16l-14 9-14-9zM236 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M197 46V24l-20-11-19 11v22l19 11 20-11zM145 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M164 52V36l-14-8-14 8v16l14 9 14-9zM173 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M74 46V24l19-11 19 11v22L93 57 74 46z" />
+                <path opacity=".3"
+                    d="M53 68V54l13-8 13 8v14l-13 8-13-8zM191 68V54l13-8 13 8v14l-13 8-13-8zM330 68V54l13-8 13 8v14l-13 8-13-8zM468 68V54l13-8 13 8v14l-13 8-13-8zM606 68V54l13-8 13 8v14l-13 8-13-8zM744 68V54l13-8 13 8v14l-13 8-13-8zM883 68V54l12-8 13 8v14l-13 8-12-8zM1021 68V54l13-8 13 8v14l-13 8-13-8zM1159 68V54l13-8 13 8v14l-13 8-13-8zM1297 68V54l13-8 13 8v14l-13 8-13-8zM1435 68V54l13-8 13 8v14l-13 8-13-8zM1574 68V54l13-8 12 8v14l-12 8-13-8zM1712 68V54l13-8 13 8v14l-13 8-13-8zM1850 68V54l13-8 13 8v14l-13 8-13-8z" />
+                <path opacity=".75" d="M106 52V36l14-8 14 8v16l-14 9-14-9zM98 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M58 46V24L39 13 20 24v22l19 11 19-11z" />
+                <path opacity=".75" d="M34 69v-8l-7-4-6 4v8l6 4 7-4z" />
+                <path
+                    d="M2001 0v15l-21 12-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14L0 13V0h2001z" />
+                <path opacity=".75" d="M12 28L0 35v19l12 7 14-9V36l-14-8z" />
+                <path opacity=".3" d="M2001 46l-13 8v14l13 8V46z" />
+            </g>
+        </svg>
+
         <!-- Info Section -->
-        <section class="container-fluid d-flex flex-column align-items-center justify-content-center" id="Info">
-            <h1 class="fs-1 pt-5">Info</h1>
-            <h3 class="fs-3">Hobbies, Routines and Stuffs</h3><br>
-            <div class="row align-items-center justify-content-around mt-4 pb-5">
-                <div class="col-8 col-md-3 d-flex flex-column align-items-center mt-5">
-                    <div class="info-img-sports">
-                        <img loading="lazy" src="./img/Aquarium.jpg" alt="Info Sports Image">
-                    </div>
-                    <div class="info-text info-text-sports mt-4">
-                        <h2>Sports</h2>
-                    </div>
-                </div>
-                <div class="col-8 col-md-3 d-flex flex-column align-items-center mt-5">
-                    <div class="info-img-games">
-                        <video width="100%" height="100%" controls>
-                            <source src="./video/IMG_2867.MOV" type="video/webm">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div class="info-text info-text-games mt-4">
-                        <h2>Games</h2>
-                    </div>
-                </div>
-                <div class="col-8 col-md-3 d-flex flex-column align-items-center mt-5">
-                    <div class="info-img-musics">
-                        <img loading="lazy" src="./img/Sightseeing.jpg" alt="Info Musics Image">
-                    </div>
-                    <div class="info-text info-text-musics mt-4">
-                        <h2>Musics</h2>
+        <section class="container-fluid d-flex flex-column justify-content-center pt-5" id="Info">
+            <h1 class="fs-1 pt-5 mt-5">Info</h1>
+            <h3 class="fs-3">Hobbies, Routines and Stuffs</h3>
+            <div class="row justify-content-center mt-4 pb-5 w-75">
+                <div class="col-12">
+                    <div class="accordion" id="infoAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    <strong>Games</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <strong>Playing and Developing?</strong><br>
+                                    <p>Besides playing games, one of my hobby is also engaging myself in trying to
+                                        develope some. I have tried and messing around with <strong>Unity</strong> and a
+                                        bit of <strong>Godot</strong>. Haven't released something significant but why
+                                        not, i like interacting stuff. Recently came across shader which is a difficult
+                                        but interesting subject.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    <strong>Sports</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Basketball</li>
+                                        <li>Soccer</li>
+                                        <li>Badminton</li>
+                                        <li>Anything but ... <strong>swimming</strong> &#58;&#40;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    <strong>Music</strong>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <strong>Like a normal person?</strong>
+                                    <p>
+                                        I also have my playlists. But besides that, i am interested in a genre that not
+                                        many people would know which is no-lyrics songs and soundtracks, especially
+                                        those for films, movies and games. If you know <strong>Hans Zimmer</strong> or
+                                        <strong>Two Steps From Hell</strong>, you would know what i am talking about
+                                        &#58;&#41;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <svg class="divider-180 w-100" height="100px" preserveAspectRatio="xMidYMax slice"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2001 77">
+            <g fill="#efbc9b">
+                <path opacity=".5" d="M1993 46V24l-19-11-19 11v22l19 11 19-11zM1942 72V60l-10-5-10 5v12l10 5 10-5z" />
+                <path opacity=".75" d="M1961 52V36l-14-8-14 8v16l14 9 14-9zM1969 69v-8l-7-4-6 4v8l6 4 7-4z" />
+                <path opacity=".5" d="M1871 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1903 52V36l14-8 14 8v16l-14 9-14-9zM1895 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1855 46V24l-19-11-19 11v22l19 11 19-11zM1803 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M1823 52V36l-14-8-14 8v16l14 9 14-9zM1831 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1733 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1765 52V36l14-8 14 8v16l-14 9-14-9zM1757 69v-8l6-4 7 4v8l-7 4-6-4z" />
+                <path opacity=".5" d="M1717 46V24l-19-11-19 11v22l19 11 19-11zM1665 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M1685 52V36l-14-8-14 8v16l14 9 14-9zM1693 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1594 46V24l19-11 20 11v22l-20 11-19-11z" />
+                <path opacity=".75" d="M1626 52V36l14-8 15 8v16l-15 9-14-9zM1618 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1579 46V24l-19-11-20 11v22l20 11 19-11zM1527 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M1547 52V36l-14-8-15 8v16l15 9 14-9zM1555 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1456 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1488 52V36l14-8 14 8v16l-14 9-14-9zM1480 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1441 46V24l-20-11-19 11v22l19 11 20-11zM1389 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M1408 52V36l-14-8-14 8v16l14 9 14-9zM1416 69v-8l-6-4-7 4v8l7 4 6-4z" />
+                <path opacity=".5" d="M1318 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1350 52V36l14-8 14 8v16l-14 9-14-9zM1342 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1302 46V24l-19-11-19 11v22l19 11 19-11zM1251 72V60l-10-5-10 5v12l10 5 10-5z" />
+                <path opacity=".75" d="M1270 52V36l-14-8-14 8v16l14 9 14-9zM1278 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1180 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M1212 52V36l14-8 14 8v16l-14 9-14-9zM1204 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M1164 46V24l-19-11-19 11v22l19 11 19-11zM1112 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M1132 52V36l-14-8-14 8v16l14 9 14-9zM1140 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M1041 46V24l20-11 19 11v22l-19 11-20-11z" />
+                <path opacity=".75" d="M1074 52V36l14-8 14 8v16l-14 9-14-9zM1066 69v-8l6-4 7 4v8l-7 4-6-4z" />
+                <path opacity=".5" d="M1026 46V24l-19-11-20 11v22l20 11 19-11zM974 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M994 52V36l-14-8-14 8v16l14 9 14-9zM1002 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M903 46V24l19-11 20 11v22l-20 11-19-11z" />
+                <path opacity=".75" d="M935 52V36l14-8 15 8v16l-15 9-14-9zM927 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M888 46V24l-20-11-19 11v22l19 11 20-11zM836 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M856 52V36l-15-8-14 8v16l14 9 15-9zM864 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M765 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M797 52V36l14-8 14 8v16l-14 9-14-9zM789 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M749 46V24l-19-11-19 11v22l19 11 19-11zM698 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M717 52V36l-14-8-14 8v16l14 9 14-9zM725 69v-8l-7-4-6 4v8l6 4 7-4z" />
+                <path opacity=".5" d="M627 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M659 52V36l14-8 14 8v16l-14 9-14-9zM651 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M611 46V24l-19-11-19 11v22l19 11 19-11zM560 72V60l-10-5-10 5v12l10 5 10-5z" />
+                <path opacity=".75" d="M579 52V36l-14-8-14 8v16l14 9 14-9zM587 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M489 46V24l19-11 19 11v22l-19 11-19-11z" />
+                <path opacity=".75" d="M521 52V36l14-8 14 8v16l-14 9-14-9zM513 69v-8l7-4 6 4v8l-6 4-7-4z" />
+                <path opacity=".5" d="M473 46V24l-19-11-19 11v22l19 11 19-11zM421 72V60l-9-5-10 5v12l10 5 9-5z" />
+                <path opacity=".75" d="M441 52V36l-14-8-14 8v16l14 9 14-9zM449 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M350 46V24l20-11 19 11v22l-19 11-20-11z" />
+                <path opacity=".75" d="M382 52V36l15-8 14 8v16l-14 9-15-9zM374 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M335 46V24l-19-11-20 11v22l20 11 19-11zM283 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M303 52V36l-14-8-14 8v16l14 9 14-9zM311 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M212 46V24l19-11 20 11v22l-20 11-19-11z" />
+                <path opacity=".75" d="M244 52V36l14-8 14 8v16l-14 9-14-9zM236 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M197 46V24l-20-11-19 11v22l19 11 20-11zM145 72V60l-10-5-9 5v12l9 5 10-5z" />
+                <path opacity=".75" d="M164 52V36l-14-8-14 8v16l14 9 14-9zM173 69v-8l-7-4-7 4v8l7 4 7-4z" />
+                <path opacity=".5" d="M74 46V24l19-11 19 11v22L93 57 74 46z" />
+                <path opacity=".3"
+                    d="M53 68V54l13-8 13 8v14l-13 8-13-8zM191 68V54l13-8 13 8v14l-13 8-13-8zM330 68V54l13-8 13 8v14l-13 8-13-8zM468 68V54l13-8 13 8v14l-13 8-13-8zM606 68V54l13-8 13 8v14l-13 8-13-8zM744 68V54l13-8 13 8v14l-13 8-13-8zM883 68V54l12-8 13 8v14l-13 8-12-8zM1021 68V54l13-8 13 8v14l-13 8-13-8zM1159 68V54l13-8 13 8v14l-13 8-13-8zM1297 68V54l13-8 13 8v14l-13 8-13-8zM1435 68V54l13-8 13 8v14l-13 8-13-8zM1574 68V54l13-8 12 8v14l-12 8-13-8zM1712 68V54l13-8 13 8v14l-13 8-13-8zM1850 68V54l13-8 13 8v14l-13 8-13-8z" />
+                <path opacity=".75" d="M106 52V36l14-8 14 8v16l-14 9-14-9zM98 69v-8l7-4 7 4v8l-7 4-7-4z" />
+                <path opacity=".5" d="M58 46V24L39 13 20 24v22l19 11 19-11z" />
+                <path opacity=".75" d="M34 69v-8l-7-4-6 4v8l6 4 7-4z" />
+                <path
+                    d="M2001 0v15l-21 12-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-24-14-23 14-23-14-23 14-24-14-23 14-23-14-24 14-23-14-23 14-23-14-24 14L0 13V0h2001z" />
+                <path opacity=".75" d="M12 28L0 35v19l12 7 14-9V36l-14-8z" />
+                <path opacity=".3" d="M2001 46l-13 8v14l13 8V46z" />
+            </g>
+        </svg>
     </main>
 
     <footer>
