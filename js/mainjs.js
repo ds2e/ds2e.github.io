@@ -1,3 +1,10 @@
+const SECTIONSID = Object.freeze({
+    BIO: "Bio",
+    EXPERIENCE: "Experience",
+    PHYLOSOPHIE: "Phylosophie",   
+    INFO: "Info",
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     if (window.innerWidth <= 767) {
         const navLinks = document.querySelectorAll('.nav-item');
@@ -9,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-document.addEventListener("resize", function () {
+document.addEventListener("resize", () => {
     if (window.innerWidth <= 767) {
         const navLinks = document.querySelectorAll('.nav-item');
         const menuToggle = document.getElementById('navbarSupportedContent');
@@ -17,27 +24,101 @@ document.addEventListener("resize", function () {
         navLinks.forEach((l) => {
             l.addEventListener('click', () => { bsCollapse.toggle() })
         })
+
+        document.querySelector('header nav').classList.remove('w-50', 'rounded-pill', 'nav-lighting')
     }
 });
 
+// scroll sections detection
 document.addEventListener("scroll", function () {
-    var scrollDistance = window.scrollY;
+    var position = window.scrollY;
 
-    // Show/hide menu on scroll
-    //if (scrollDistance >= 850) {
-    //		$('nav').fadeIn("fast");
-    //} else {
-    //		$('nav').fadeOut("fast");
-    //}
+    if(position == 0 && window.innerWidth > 767){
+        document.querySelector('header nav').classList.add('w-50', 'rounded-pill', 'nav-lighting')
+    }
+    else {
+        document.querySelector('header nav').classList.remove('w-50', 'rounded-pill', 'nav-lighting')
+    }
 
-    // Assign active class to nav links while scolling
-    $('section').each(function (i) {
-        if ($(this).position().top <= scrollDistance + 100) {
-            $('#navbarSupportedContent ul li a.active').removeClass('active');
-            $('#navbarSupportedContent ul li a').eq(i).addClass('active');
+    const sections = document.querySelectorAll('section');
+
+    if (position <= sections[0].offsetTop - 100) {
+        document.querySelectorAll('#navbarSupportedContent > ul > li > a').forEach((link) => {
+            if (link.classList.contains("active")) {
+                link.classList.remove('active')
+            }
+        });
+    }
+
+    sections.forEach(function (ele, ind) {
+        var target_id = ele.getAttribute("id");
+
+        if (position >= ele.offsetTop - 200 && position < ele.offsetTop + ele.offsetHeight - 200) {
+            document.querySelectorAll('#navbarSupportedContent > ul > li > a').forEach((link) => {
+                if (link.getAttribute("href") == `#${target_id}`) {
+                    link.classList.add('active');
+                }
+                else if (link.getAttribute("href") !== `#${target_id}` && link.classList.contains("active")) {
+                    link.classList.remove('active')
+                }
+            });
         }
+
+        if (position + window.innerHeight >= ele.offsetTop + 100 && position < ele.offsetTop + ele.offsetHeight - 250) {
+            TriggerSectionEffect(target_id);
+        } else {
+            ReverseSectionEffect(target_id);
+        }
+
     });
 });
+
+function TriggerSectionEffect(sec_id) {
+    switch (sec_id) {
+        case SECTIONSID.BIO:
+            document.querySelector('#Bio .effect-zoom-in').classList.add('appear-zoom-in');
+            document.querySelector('#Bio .effect-flip-card-horizontal').classList.add('appear-flip-card-horizontal');
+            break;
+        case SECTIONSID.EXPERIENCE:
+            document.querySelectorAll('#Experience .effect-lr').forEach((ele) => {
+                ele.classList.add('appear-lr');
+            })
+
+            document.querySelectorAll('#Experience .effect-rl').forEach((ele) => {
+                ele.classList.add('appear-rl');
+            });
+            break;
+        case SECTIONSID.INFO:
+            document.querySelector('#Info .effect-top-down').classList.add('appear-top-down');
+            break;
+        default:
+            break;
+    }
+}
+
+function ReverseSectionEffect(sec_id) {
+    switch (sec_id) {
+        case SECTIONSID.BIO:
+            document.querySelector('#Bio .effect-zoom-in').classList.remove('appear-zoom-in');
+            document.querySelector('#Bio .effect-flip-card-horizontal').classList.remove('appear-flip-card-horizontal');
+            break;
+        case SECTIONSID.EXPERIENCE:
+            document.querySelectorAll('#Experience .effect-lr').forEach((ele) => {
+                ele.classList.remove('appear-lr');
+            })
+
+            document.querySelectorAll('#Experience .effect-rl').forEach((ele) => {
+                ele.classList.remove('appear-rl');
+            });
+
+            break;
+        case SECTIONSID.INFO:
+            document.querySelector('#Info .effect-top-down').classList.remove('appear-top-down');
+            break;
+        default:
+            break;
+    }
+}
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
