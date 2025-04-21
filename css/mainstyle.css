@@ -246,6 +246,7 @@ main {
     box-shadow: inset 0 0 0.5em black;
 
     align-content: center;
+    justify-items: center;
 }
 
 .swiper-slide img {
